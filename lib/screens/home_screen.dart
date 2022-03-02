@@ -1,5 +1,6 @@
 import 'package:cooking_app/AppAssets.dart';
 import 'package:cooking_app/AppColors.dart';
+import 'package:cooking_app/screens/detail_screen.dart';
 import 'package:cooking_app/widgets/chips.dart';
 import 'package:cooking_app/widgets/dotted_slider.dart';
 import 'package:cooking_app/widgets/guide_card.dart';
@@ -219,34 +220,41 @@ class _HomeScreenState extends State<HomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Ingredients(),
-                          Container(
-                            height: 50.0,
-                            width: 180.0,
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 20.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Icon(
-                                    AppAssets.grillIcon,
-                                    color: AppColors.colorPrimary,
-                                  ),
-                                  Text(
-                                    "Start Cooking",
-                                    style: TextStyle(
-                                        fontSize: 16.0,
-                                        fontWeight: FontWeight.w500,
-                                        color: AppColors.colorPrimary),
-                                  ),
-                                ],
-                              ),
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DetailScreen()),
                             ),
-                            decoration: BoxDecoration(
-                              color:
-                                  AppColors.colorActiveSlider.withOpacity(0.1),
-                              borderRadius: BorderRadius.circular(50.0),
+                            child: Container(
+                              height: 50.0,
+                              width: 180.0,
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 20.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Icon(
+                                      AppAssets.grillIcon,
+                                      color: AppColors.colorPrimary,
+                                    ),
+                                    Text(
+                                      "Start Cooking",
+                                      style: TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.w500,
+                                          color: AppColors.colorPrimary),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              decoration: BoxDecoration(
+                                color:
+                                    AppColors.colorActiveSlider.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(50.0),
+                              ),
                             ),
                           ),
                         ],

@@ -1,6 +1,8 @@
-# cooking_app
+# Cooking App
 
 A new Flutter project.
+
+![alt text](https://github.com/osamamgomaa/cooking_app/tree/main/assets/images/image.png?raw=true)
 
 ## Getting Started
 
