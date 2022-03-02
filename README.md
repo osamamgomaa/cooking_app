@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-![alt text](https://github.com/osamamgomaa/cooking_app/tree/main/assets/images/image.png?raw=true)
+![alt text](https://raw.githubusercontent.com/osamamgomaa/cooking_app/main/assets/images/image.png?token=GHSAT0AAAAAABSCZ6NKZME767B3GNWHBEFYYQ7LJZA)
 
 ## Getting Started
 
