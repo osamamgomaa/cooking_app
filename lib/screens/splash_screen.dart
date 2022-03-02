@@ -1,7 +1,9 @@
-import 'package:cooking_app/AppAssets.dart';
-import 'package:cooking_app/AppColors.dart';
-import 'package:cooking_app/screens/home_screen.dart';
+import '../AppAssets.dart';
+import '../AppColors.dart';
+import '../screens/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/circular_btn.dart';
 
 class SplashScreen extends StatefulWidget {
   SplashScreen({Key? key}) : super(key: key);
@@ -90,22 +92,22 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                   GestureDetector(
                     onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()),
-                    ),
+                        context,
+                        MaterialPageRoute(builder: (context) => HomeScreen())),
                     child: Container(
                       height: 90.0,
                       width: 90.0,
-                      child: Icon(
-                        AppAssets.nextIcon,
-                        size: 22.0,
-                        color: AppColors.colorWhite,
+                      child: CircularBtn(
+                        color: AppColors.colorPrimary,
+                        icon: Icon(
+                          AppAssets.nextIcon,
+                          size: 22.0,
+                          color: AppColors.colorWhite,
+                        ),
+                        size: 90.0,
                       ),
-                      decoration: BoxDecoration(
-                          color: AppColors.colorPrimary,
-                          borderRadius: BorderRadius.circular(50.0)),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

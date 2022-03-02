@@ -1,4 +1,4 @@
-import 'package:cooking_app/AppColors.dart';
+import '../AppColors.dart';
 import 'package:flutter/material.dart';
 
 class DottedSlider extends StatelessWidget {

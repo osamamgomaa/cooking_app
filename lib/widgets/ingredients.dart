@@ -1,5 +1,5 @@
-import 'package:cooking_app/AppAssets.dart';
-import 'package:cooking_app/AppColors.dart';
+import '../AppAssets.dart';
+import '../AppColors.dart';
 import 'package:flutter/material.dart';
 
 class Ingredients extends StatelessWidget {
@@ -7,29 +7,41 @@ class Ingredients extends StatelessWidget {
 
   static List images = [
     AppAssets.broccoliIcon,
-    AppAssets.riceIcon,
     AppAssets.salmonIcon,
+    AppAssets.riceIcon,
     AppAssets.onionIcon,
   ];
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 35.0,
-      width: 80.0,
+      height: 30.0,
+      width: 100.0,
       child: ListView.builder(
           itemCount: images.length,
           scrollDirection: Axis.horizontal,
           itemBuilder: (BuildContext context, int itemIndex) {
-            return CircleAvatar(
-              backgroundColor: AppColors.colorBlack,
-              child: ClipOval(
+            return Align(
+              widthFactor: 0.6,
+              child: CircleAvatar(
+                                    backgroundColor: AppColors.colorCard,
+
                 child: Container(
-                  color: AppColors.colorWhite,
-                  child: Image.asset(
-                    images[itemIndex],
-                    height: 30.0,
-                    width: 30.0,
+                        height: 25.0,
+              
+                  child: CircleAvatar(
+                    backgroundColor: AppColors.colorWhite,
+                    child: Container(
+                      height: 20.0,
+                      width: 20.0,
+                      decoration: BoxDecoration(
+                          color: AppColors.colorWhite, shape: BoxShape.circle),
+                      child: Image.asset(
+                        images[itemIndex],
+                        height: 20.0,
+                        width: 20.0,
+                      ),
+                    ),
                   ),
                 ),
               ),

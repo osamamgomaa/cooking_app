@@ -1,6 +1,8 @@
-import 'package:cooking_app/AppAssets.dart';
-import 'package:cooking_app/AppColors.dart';
+import '../AppAssets.dart';
+import '../AppColors.dart';
 import 'package:flutter/material.dart';
+
+import 'circular_btn.dart';
 
 class GuideCard extends StatelessWidget {
   const GuideCard({
@@ -45,19 +47,14 @@ class GuideCard extends StatelessWidget {
         Positioned(
           bottom: 30.0,
           right: 30.0,
-          child: Container(
-            height: 70.0,
-            width: 70.0,
-            child: Icon(
-              AppAssets.nextIcon,
-              size: 22.0,
-              color: AppColors.colorWhite,
-            ),
-            decoration: BoxDecoration(
+          child: CircularBtn(
               color: AppColors.colorCard.withOpacity(0.9),
-              borderRadius: BorderRadius.circular(50.0),
-            ),
-          ),
+              icon: Icon(
+                AppAssets.nextIcon,
+                size: 22.0,
+                color: AppColors.colorWhite,
+              ),
+              size: 70.0,),
         )
       ],
     );

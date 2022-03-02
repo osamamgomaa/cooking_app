@@ -6,11 +6,6 @@ class AppAssets {
   static final IconData searchIcon = Icons.search_rounded;
   static final IconData grillIcon = Icons.outdoor_grill_outlined;
 
-  static final IconData hIcon = Icons.home_rounded;
-  static final IconData lIcon = Icons.list_alt_rounded;
-  static final IconData cIcon = Icons.fastfood_sharp;
-  static final IconData uIcon = Icons.person_outline_rounded;
-
   static const String homeIcon = "assets/images/home.png";
   static const String listIcon = "assets/images/list.png";
   static const String chefIcon = "assets/images/chef.png";

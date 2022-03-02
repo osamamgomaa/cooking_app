@@ -1,6 +1,4 @@
-import 'package:cooking_app/screens/detail_screen.dart';
-import 'package:cooking_app/screens/home_screen.dart';
-import 'package:cooking_app/screens/splash_screen.dart';
+import '../screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
